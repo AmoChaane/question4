@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">question4</string>
-    <string name="title_home">Home</string>
+    <string name="title_inventory">Inventory</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_sales">Sales</string>
+    <string name="title_reports">Reports</string>
 </resources>

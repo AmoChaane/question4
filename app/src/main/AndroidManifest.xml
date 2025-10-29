@@ -22,6 +22,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".InventoryActivity"
+            android:exported="false"
+            android:label="@string/title_inventory" />
+
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false"
+            android:label="@string/title_dashboard" />
+
+        <activity
+            android:name=".SalesActivity"
+            android:exported="false"
+            android:label="@string/title_sales" />
+
+        <activity
+            android:name=".ReportsActivity"
+            android:exported="false"
+            android:label="@string/title_reports" />
     </application>
 
 </manifest>
