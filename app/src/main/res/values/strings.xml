@@ -1,7 +1,75 @@
 <resources>
-    <string name="app_name">question4</string>
+    <string name="app_name">InventoryPro</string>
     <string name="title_inventory">Inventory</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_sales">Sales</string>
     <string name="title_reports">Reports</string>
+    
+    <!-- Splash Screen -->
+    <string name="splash_tagline">Professional Inventory Management</string>
+    
+    <!-- Dashboard -->
+    <string name="total_products">Total Products</string>
+    <string name="total_sales">Total Sales</string>
+    <string name="low_stock_alerts">Low Stock Alerts</string>
+    <string name="total_revenue">Total Revenue</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="add_product">Add Product</string>
+    <string name="record_sale">Record Sale</string>
+    <string name="view_reports">View Reports</string>
+    
+    <!-- Inventory -->
+    <string name="search_products">Search products...</string>
+    <string name="add_new_product">Add New Product</string>
+    <string name="product_name">Product Name</string>
+    <string name="price">Price</string>
+    <string name="stock_quantity">Stock Quantity</string>
+    <string name="category">Category</string>
+    <string name="save_product">Save Product</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit_product">Edit Product</string>
+    <string name="delete_product">Delete Product</string>
+    <string name="confirm_delete">Are you sure you want to delete this product?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    
+    <!-- Sales -->
+    <string name="new_sale">New Sale</string>
+    <string name="select_product">Select Product</string>
+    <string name="quantity">Quantity</string>
+    <string name="sale_date">Sale Date</string>
+    <string name="record_sale_btn">Record Sale</string>
+    <string name="sales_history">Sales History</string>
+    <string name="total_amount">Total Amount</string>
+    
+    <!-- Reports -->
+    <string name="daily_sales">Daily Sales</string>
+    <string name="weekly_sales">Weekly Sales</string>
+    <string name="monthly_sales">Monthly Sales</string>
+    <string name="export_csv">Export to CSV</string>
+    <string name="profit_margins">Profit Margins</string>
+    <string name="inventory_value">Inventory Value</string>
+    <string name="select_date_range">Select Date Range</string>
+    <string name="from_date">From Date</string>
+    <string name="to_date">To Date</string>
+    <string name="generate_report">Generate Report</string>
+    
+    <!-- Categories -->
+    <string name="electronics">Electronics</string>
+    <string name="clothing">Clothing</string>
+    <string name="food">Food</string>
+    <string name="books">Books</string>
+    <string name="home_garden">Home &amp; Garden</string>
+    <string name="other">Other</string>
+    
+    <!-- Validation -->
+    <string name="field_required">This field is required</string>
+    <string name="invalid_price">Please enter a valid price</string>
+    <string name="invalid_quantity">Please enter a valid quantity</string>
+    
+    <!-- Success Messages -->
+    <string name="product_saved">Product saved successfully</string>
+    <string name="product_deleted">Product deleted successfully</string>
+    <string name="sale_recorded">Sale recorded successfully</string>
+    <string name="report_exported">Report exported successfully</string>
 </resources>
