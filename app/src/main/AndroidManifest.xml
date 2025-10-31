@@ -41,9 +41,15 @@
             android:name=".ReportsActivity"
             android:exported="false"
             android:label="@string/title_reports" />
+        
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Question4.Splash" />
     </application>
 
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 </manifest>

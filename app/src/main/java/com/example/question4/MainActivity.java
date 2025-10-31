@@ -11,8 +11,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
-        // Redirect to DashboardActivity as the main entry point
-        Intent intent = new Intent(this, DashboardActivity.class);
+        // Redirect to SplashActivity as the main entry point
+        Intent intent = new Intent(this, SplashActivity.class);
         startActivity(intent);
         finish(); // Close MainActivity so user can't go back to it
     }
