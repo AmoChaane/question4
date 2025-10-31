@@ -70,18 +70,18 @@
             app:layout_constraintEnd_toStartOf="@id/tv_sale_amount"
             tools:text="Qty: 2" />
 
-        <!-- Sale Amount -->
+        <!-- Total Amount -->
         <TextView
             android:id="@+id/tv_sale_amount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="$0.00"
+            android:text="R0.00"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@color/success_green"
             app:layout_constraintTop_toTopOf="@id/iv_sale_icon"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:text="$1,399.98" />
+            tools:text="R1,399.98" />
 
         <!-- Sale ID -->
         <TextView

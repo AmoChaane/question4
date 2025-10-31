@@ -40,7 +40,7 @@ public class SaleAdapter extends RecyclerView.Adapter<SaleAdapter.SaleViewHolder
         holder.tvSaleProductName.setText(sale.getProductName());
         holder.tvSaleDate.setText(dateFormat.format(new Date(sale.getSaleDate())));
         holder.tvSaleQuantity.setText("Qty: " + sale.getQuantity());
-        holder.tvSaleAmount.setText("$" + String.format("%.2f", sale.getTotalPrice()));
+        holder.tvSaleAmount.setText("R" + String.format("%.2f", sale.getTotalPrice()));
         holder.tvSaleId.setText("ID: " + String.format("%03d", sale.getId()));
     }
 

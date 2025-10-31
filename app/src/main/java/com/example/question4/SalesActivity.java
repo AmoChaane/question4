@@ -171,7 +171,7 @@ public class SalesActivity extends AppCompatActivity {
             // Create adapter for spinner
             List<String> productNames = new ArrayList<>();
             for (Product product : productList) {
-                productNames.add(product.getName() + " - $" + String.format("%.2f", product.getPrice()));
+                productNames.add(product.getName() + " - R" + String.format("%.2f", product.getPrice()));
             }
             
             ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, productNames);
@@ -199,12 +199,12 @@ public class SalesActivity extends AppCompatActivity {
             try {
                 int quantity = Integer.parseInt(etQuantity.getText().toString());
                 double total = selectedProduct.getPrice() * quantity;
-                tvTotalAmount.setText("$" + String.format("%.2f", total));
+                tvTotalAmount.setText("R" + String.format("%.2f", total));
             } catch (NumberFormatException e) {
-                tvTotalAmount.setText("$0.00");
+                tvTotalAmount.setText("R0.00");
             }
         } else {
-            tvTotalAmount.setText("$0.00");
+            tvTotalAmount.setText("R0.00");
         }
     }
     
@@ -285,7 +285,7 @@ public class SalesActivity extends AppCompatActivity {
         spinnerProducts.setText("");
         etQuantity.setText("");
         etSaleDate.setText(dateFormat.format(new Date()));
-        tvTotalAmount.setText("$0.00");
+        tvTotalAmount.setText("R0.00");
         selectedProduct = null;
         selectedDate = Calendar.getInstance();
     }

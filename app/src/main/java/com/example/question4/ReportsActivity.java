@@ -185,7 +185,7 @@ public class ReportsActivity extends AppCompatActivity {
             
             // Update UI with simplified data
             tvProfitMargin.setText(salesInRange.size() + " Sales");
-            tvInventoryValue.setText("$" + String.format("%.2f", inventoryValue));
+            tvInventoryValue.setText("R" + String.format("%.2f", inventoryValue));
             
             Toast.makeText(this, "Report generated successfully", Toast.LENGTH_SHORT).show();
             
@@ -198,7 +198,7 @@ public class ReportsActivity extends AppCompatActivity {
     
     private void clearReportData() {
         tvProfitMargin.setText("0 Sales");
-        tvInventoryValue.setText("$0.00");
+        tvInventoryValue.setText("R0.00");
     }
     
     private void exportToCSV() {

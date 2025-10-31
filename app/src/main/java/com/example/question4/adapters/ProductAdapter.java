@@ -46,7 +46,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         holder.tvProductName.setText(product.getName());
         holder.tvProductCategory.setText(product.getCategory());
         holder.tvProductStock.setText("Stock: " + product.getStock());
-        holder.tvProductPrice.setText("$" + String.format("%.2f", product.getPrice()));
+        holder.tvProductPrice.setText("R" + String.format("%.2f", product.getPrice()));
         
         // Set stock indicator color
         if (product.isLowStock()) {

@@ -75,13 +75,13 @@
             android:id="@+id/tv_product_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="$0.00"
+            android:text="R0.00"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@color/success_green"
             app:layout_constraintTop_toTopOf="@id/iv_product_icon"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:text="$699.99" />
+            tools:text="R699.99" />
 
         <!-- Stock Status Indicator -->
         <View

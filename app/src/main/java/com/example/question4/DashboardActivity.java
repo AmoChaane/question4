@@ -117,7 +117,7 @@ public class DashboardActivity extends AppCompatActivity {
             
             // Load total revenue
             double totalRevenue = dbHandler.getTotalRevenue();
-            tvTotalRevenue.setText("$" + String.format("%.2f", totalRevenue));
+            tvTotalRevenue.setText("R" + String.format("%.2f", totalRevenue));
             
             // Load total sales count
             int totalSales = dbHandler.getTotalSalesCount();
