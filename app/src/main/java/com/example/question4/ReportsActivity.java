@@ -210,13 +210,25 @@ public class ReportsActivity extends AppCompatActivity {
                 return;
             }
             
-            boolean success = csvExporter.exportSalesToCSV(salesData, 
-                "sales_report_" + dateFormat.format(startDate.getTime()).replace(" ", "_"));
+            String fileName = "sales_report_" + dateFormat.format(startDate.getTime()).replace(" ", "_");
+            boolean success = csvExporter.exportSalesToCSV(salesData, fileName);
             
             if (success) {
-                Toast.makeText(this, "Report exported successfully to Downloads folder", Toast.LENGTH_LONG).show();
+                String exportPath = csvExporter.getLastExportPath();
+                Toast.makeText(this, "Report exported successfully!\nFile: " + fileName + ".csv\nLocation: " + exportPath, Toast.LENGTH_LONG).show();
+                
+                // Try to open file manager to show the file
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setDataAndType(android.net.Uri.parse(exportPath), "resource/folder");
+                    if (intent.resolveActivityInfo(getPackageManager(), 0) != null) {
+                        startActivity(intent);
+                    }
+                } catch (Exception e) {
+                    // File manager not available, just show the toast
+                }
             } else {
-                Toast.makeText(this, "Failed to export report", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Failed to export report. Check app permissions.", Toast.LENGTH_SHORT).show();
             }
             
         } catch (Exception e) {
