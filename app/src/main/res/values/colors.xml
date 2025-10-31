@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Primary Brand Colors -->
-    <color name="primary_blue">#1976D2</color>
-    <color name="primary_blue_dark">#1565C0</color>
-    <color name="primary_blue_light">#42A5F5</color>
+    <!-- Two-Color Palette: Muted Dark Gray & Soft Blue -->
     
-    <!-- Accent Colors -->
-    <color name="accent_orange">#FF9800</color>
-    <color name="accent_green">#4CAF50</color>
-    <color name="accent_red">#F44336</color>
+    <!-- Primary Color: Muted Dark Gray -->
+    <color name="primary_blue">#546E7A</color>
+    <color name="primary_blue_dark">#455A64</color>
+    <color name="primary_blue_light">#607D8B</color>
+    
+    <!-- Secondary Color: Soft Muted Blue -->
+    <color name="accent_orange">#78909C</color>
+    <color name="accent_green">#78909C</color>
+    <color name="accent_red">#546E7A</color>
     
     <!-- Background Colors -->
     <color name="background_light">#FAFAFA</color>
@@ -16,15 +18,15 @@
     <color name="card_background">#FFFFFF</color>
     
     <!-- Text Colors -->
-    <color name="text_primary">#212121</color>
-    <color name="text_secondary">#757575</color>
+    <color name="text_primary">#37474F</color>
+    <color name="text_secondary">#78909C</color>
     <color name="text_white">#FFFFFF</color>
     
-    <!-- Status Colors -->
-    <color name="success_green">#4CAF50</color>
-    <color name="warning_orange">#FF9800</color>
-    <color name="error_red">#F44336</color>
-    <color name="info_blue">#2196F3</color>
+    <!-- Status Colors (using our two-color palette) -->
+    <color name="success_green">#78909C</color>
+    <color name="warning_orange">#546E7A</color>
+    <color name="error_red">#546E7A</color>
+    <color name="info_blue">#78909C</color>
     
     <!-- Traditional Colors (keep for compatibility) -->
     <color name="purple_200">#FFBB86FC</color>
